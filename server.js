@@ -10,7 +10,7 @@ server.use(middlewares);
 // Add this before server.use(router)
 server.use(
   // Add custom route here if needed
-  jsonServer.rewritter({
+  jsonServer.rewriter({
     "/": "/$1",
   })
 );
